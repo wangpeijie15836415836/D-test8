@@ -1,0 +1,278 @@
+#head {
+	height: 82px;
+	background: #24292C;
+}
+
+.logio {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.logio>a {
+	display: block;
+	background: url(../img/hd24.png) no-repeat 24px 1px;
+	width: 220px;
+	height: 44px;
+	text-indent: 10px;
+}
+
+.logio ul {
+	width: 450px;
+	height: 47px;
+	margin-top: 13px;
+	margin-left: 27px;
+	position: relative;
+}
+
+.logio ul li {
+	width: 75px;
+	height: 100%;
+	text-align: center;
+	line-height: 47px;
+	float: left;
+	transition: 0.5s;
+}
+
+.logio ul li>a {
+	display: inline-block;
+	color: #999;
+	font-size: 16px;
+}
+
+.logio ul .mli {
+	position: relative;
+}
+
+.logio .hides {
+	position: absolute;
+	top: 47px;
+	left: 50%;
+	width: 226px;
+	margin-left: -113px;
+	z-index: 10;
+	display: none;
+	/*height: 240px;*/
+}
+
+.logio .hides .hidesrec {
+	position: absolute;
+	top: -20px;
+	left: 58%;
+	margin-left: -37px;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #000;
+}
+
+.logio .hides div {
+	text-indent: 10px;
+	height: 40px;
+}
+
+.logio .hides p {
+	text-indent: 10px;
+	height: 40px;
+	background: #000;
+}
+
+.logio .hides>p a {
+	display: block;
+	width: 147px;
+	height: 40px;
+	padding: 0px 40px;
+	color: #bcbcbc;
+	line-height: 40px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.logio .hides>p:nth-of-type(1) a {
+	background: url(../img/icon4-24.png) no-repeat 52px -260px;
+	;
+}
+
+.logio .hides>p:nth-of-type(2) a {
+	background: url(../img/icon4-24.png) no-repeat 52px -299px;
+}
+
+.logio .hides>p:nth-of-type(3) a {
+	background: url(../img/icon4-24.png) no-repeat 52px -712px;
+}
+
+.logio .hides>p:nth-of-type(4) a {
+	background: url(../img/icon4-24.png) no-repeat 52px -419px;
+}
+
+.logio ul li:hover a {
+	color: #fff;
+}
+
+.logio ul>.ding {
+	position: absolute;
+	left: 25px;
+	top: 38px;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-bottom-color: #fff;
+	/*z-index: -1;*/
+}
+
+.logio ul li>.rec {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 3px solid transparent;
+	border-top-color: #999;
+	margin-left: 6px;
+}
+
+.logio ul li:hover .rec {
+	border-top-color: #fff;
+}
+
+.logio .search {
+	width: 184px;
+	height: 26px;
+	margin-top: 15px;
+	margin-right: 64px;
+	position: relative;
+}
+
+.search .sbox {
+	width: 200px;
+	height: 100%;
+	border-radius: 10px;
+	background: #000;
+	outline: none;
+	text-indent: 35px;
+	border: 0px;
+	color: #fff;
+}
+
+.search a {
+	position: absolute;
+	top: 4px;
+	left: 6px;
+	width: 18px;
+	height: 21px;
+	background: url(../img/icon4-24.png) no-repeat -61px -79px;
+}
+
+.search span {
+	position: absolute;
+	right: -11px;
+	top: 4px;
+	width: 40px;
+	height: 21px;
+	background: url(../img/icon4-24.png) no-repeat -210px -81px;
+}
+
+#dhead {
+	height: 90px;
+	background: #fff;
+	box-shadow: 0px 1px 2px 0px rgba(179, 178, 179, 1);
+}
+
+.center {
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.center .trs {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.trs li {
+	list-style: none;
+	width: 200px;
+	height: 100%;
+	perspective: 2400px;
+	padding: 0 1px;
+	position: relative;
+}
+
+.trs li:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 88px;
+	height: 3px;
+	width: 0%;
+	background: #9AC600;
+	transition: all 1s;
+}
+
+.trs li:hover:after {
+	width: 100%;
+}
+
+.trs li a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+
+.trs li a p {
+	height: 100%;
+	color: #000;
+	text-align: center;
+	line-height: 100px;
+	font-size: 20px;
+	transition: all 0.5s;
+	box-shadow: 0 0 1px 1px rgba(12, 217, 215, .3) inset;
+}
+
+.trs li a p:first-child {
+	transform: translateZ(40px);
+}
+
+.trs li a p:last-child {
+	transform: translateZ(50px) rotateX(90deg);
+	margin-top: -45px;
+}
+
+.trs li a:hover {
+	transform: rotateX(90deg);
+}
+
+.trs li a:hover p:last-child {
+	transform: rotateX(-90deg);
+	margin-top: 0px;
+}
+#waterfall{
+	margin-top:40px;
+}
+#div1{
+	margin: auto;
+	position: relative;
+}
+
+.box {
+	float: left;
+	padding: 10px;
+	border: 1px solid #ccc;
+	background: #f7f7f7;
+	box-shadow: 0 0 8px #ccc;
+}
+
+.box:hover {
+	box-shadow: 0 0 10px #999;
+}
+
+.box img {
+	width: 200px;
+}

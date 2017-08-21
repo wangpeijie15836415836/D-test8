@@ -1,0 +1,148 @@
+body{
+	overflow: auto;
+}
+#bg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#bg div{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top:0;
+	opacity: 0;
+	transition:opacity 1s;
+}
+#bg div img{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+#bg div:nth-of-type(1){
+	opacity: 1;
+}
+#user{
+	position: absolute;
+	left:50%;
+	margin-left: -300px;
+	width: 600px;
+	/*overflow: hidden;*/
+}
+/*.move{
+	position: absolute;
+	top:-300px;
+	width: 600px;
+	left:50%;
+	margin-left: -300px;
+	margin-bottom: 50px;
+}*/
+.name-head{
+	height: 202px;
+	border:4px double #7f9397;
+	border-width: 4px 0;
+	text-align: center;
+	padding:25px 0;
+	margin-top:50px;
+	animation: bounceInDown 1s linear 2s both;
+}
+.name-head a{
+	color: #fff;
+	transition: all .5s ease;
+	text-decoration: none;
+		
+}
+.name-head a:hover{
+	text-shadow: 0 0 10px rgba(255,255,255,1);
+}
+.name-head a img{
+	width: 130px;
+	height: 130px;
+	border:5px solid rgba(255,255,255,.15);
+	border-radius: 50%;
+	transition: all .5s ease;
+	margin-bottom:20px;
+}
+.name-head a:hover img{
+	box-shadow: 0px 0px 3px 3px rgba(255,255,255,.5); 
+}
+.name-head .des{
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 4px;
+    line-height: 42px;
+    text-shadow: 0 0 10px rgba(255,255,255,0.75);
+}
+.message{
+	height: 32px;
+	border-bottom:1px dashed #ccc;
+	padding:25px 0 25px;
+	text-align: center;
+	animation: bounceInDown 1s linear 1s both;
+}
+.message a{
+	line-height: 32px;
+	color: #fff;
+	padding-right: 20px;
+	transition: all .5s ease;
+}
+.message a:hover{
+	text-shadow: 0 0 10px rgba(255,255,255,1);
+}
+#bd{
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;
+    top: 460px;
+    border-bottom: 1px dashed #fff;
+    padding-bottom: 20px;
+    animation: bounceInDown 1s linear 0s both;
+}
+#bd img{
+	width: 98%;
+	border:5px solid rgba(255,255,255,.15);
+	transition: all 1s;
+}
+#bd img:hover{
+	box-shadow: 0px 0px 3px 3px rgba(255,255,255,.5); 
+}
+#bd .introd p{
+	color: #a7aeaf;
+	line-height: 20px;
+	margin-top:20px;
+}
+.sign{
+	margin-top:20px;
+}
+.sign a{
+	padding-left: 15px;
+    color: #fff;
+    background: url(../img/sprit.png) no-repeat 0px 3px;
+    margin-right: 20px;
+}
+.sign a:hover{
+	text-shadow: 0 0 10px rgba(255,255,255,1);
+}
+#footer{
+	position: fixed;
+	bottom: 20px;
+    left: 50%;
+    margin-left: -300px;
+	text-align: center;
+	color: #ccc;
+	width:600px;
+	animation: bounceInDown 1s linear 0s both;
+}
+#footer a{
+	color: #ccc;
+	transition: all .5s ease;
+}
+#footer a:hover{
+	text-shadow: 0 0 10px rgba(255,255,255,1);
+}
